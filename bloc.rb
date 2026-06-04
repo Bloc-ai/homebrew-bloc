@@ -5,20 +5,20 @@
 class Bloc < Formula
   desc "CLI to discover and run local AI models using community recipes"
   homepage "https://bloc-theta.vercel.app/"
-  version "0.5.2"
+  version "0.5.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Bloc-ai/Bloc/releases/download/v0.5.2/bloc_darwin_amd64.tar.gz"
-      sha256 "75123e861c047aeb74efefc5ce26979a6cec9e12ae6bd730b52a920f910e36fb"
+      url "https://github.com/Bloc-ai/Bloc/releases/download/v0.5.3/bloc_darwin_amd64.tar.gz"
+      sha256 "477c4e59ba58b5aa57a2d9c887cf179c357b9c496d82f9acfa0dff1ba7696767"
 
       def install
         bin.install "bloc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Bloc-ai/Bloc/releases/download/v0.5.2/bloc_darwin_arm64.tar.gz"
-      sha256 "f4a203bfdccd15e51904188692689920d66070933d1f04ea008eb9028d3e3abd"
+      url "https://github.com/Bloc-ai/Bloc/releases/download/v0.5.3/bloc_darwin_arm64.tar.gz"
+      sha256 "2cb817c0de5666a0cfdb8fb5f56fb3b67c4ca12c6df368910163a3df8ea43455"
 
       def install
         bin.install "bloc"
@@ -28,15 +28,15 @@ class Bloc < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/Bloc-ai/Bloc/releases/download/v0.5.2/bloc_linux_amd64.tar.gz"
-      sha256 "170ace3552c879a9316c8c43208c038878141e0821e46a8763d421e381b9d0c7"
+      url "https://github.com/Bloc-ai/Bloc/releases/download/v0.5.3/bloc_linux_amd64.tar.gz"
+      sha256 "53c8104a53869011a0b42685096df4d62b63cd60faeaaa56358c29923306c5a4"
       def install
         bin.install "bloc"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/Bloc-ai/Bloc/releases/download/v0.5.2/bloc_linux_arm64.tar.gz"
-      sha256 "762a263a72793f3213d2a544664c567e1c8c93ad5ae6562993995641cca7665d"
+      url "https://github.com/Bloc-ai/Bloc/releases/download/v0.5.3/bloc_linux_arm64.tar.gz"
+      sha256 "e316b270db05cb1b953a08c700ba5e791044b2939817684b3bf852b788346638"
       def install
         bin.install "bloc"
       end
